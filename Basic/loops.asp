@@ -26,6 +26,7 @@ i = 3
 do while i < 15
 	response.write(" " & i)
 	i = i + 2
+	if i > 11 then exit do
 loop
 response.write("<br>")
 %>
