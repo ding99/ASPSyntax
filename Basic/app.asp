@@ -17,7 +17,7 @@ dim j
 j = application.contents.count
 response.write("application variables: " & j & "<br>")
 for i = 1 to j
-	response.write(application.contents(i) & "<br>")
+	response.write("[" & application.contents(i) & "]<br>")
 next
 
 response.write("<br>Application Objects<br>")
