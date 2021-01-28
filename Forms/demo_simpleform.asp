@@ -12,19 +12,10 @@ fname = Request.Form("fname1")
 lname = Request.Form("lname1")
 
 if (fname <> "") or (lname <> "") then
-
-	response.write("Hello")
-	
-	if fname <> "" then
-		response.write(" "  & fname)
-	end if
-	if lname <> "" then
-		response.write(" " & lname)
-	end if
-
-	response.write("!<br>")
-	response.write("How are you today?")
-
+	response.write("Welcome")
+	if fname <> "" then response.write(" "  & fname)
+	if lname <> "" then response.write(" " & lname)
+	response.write("!")
 end if
 
 %>
