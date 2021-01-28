@@ -4,7 +4,7 @@
 <%
 session("username") = "Donald Duck"
 session("age") = 50
-session("favorite") = "driving"
+session("favorite") = "Fishing"
 
 dim k
 for each k in session.contents

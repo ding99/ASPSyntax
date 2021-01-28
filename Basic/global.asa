@@ -1,0 +1,12 @@
+<script language="vbscript" runat="server">
+
+sub application_onstart
+application("vertime")=""
+application("users")=1
+end sub
+
+sub session_onstart
+session("started")=now()
+end sub
+
+</script>
