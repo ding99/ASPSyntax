@@ -30,5 +30,8 @@ for each s in session.staticobjects
 	response.write( s & "<br>")
 next
 %>
+
+<p>There are <%response.write(application("users"))%> users online now!</p>
+
 </body>
 </html>

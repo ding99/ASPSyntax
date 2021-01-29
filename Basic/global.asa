@@ -5,11 +5,20 @@
 
 sub application_onstart
 application("vertime")=""
-application("users")=1
+application("users")=0
 end sub
 
 sub session_onstart
 session("started")=now()
+application.lock
+application("users")= application("users") + 1
+application.unlock
+end sub
+
+sub session_onend
+application.lock
+application("users")= application("users") - 1
+application.unlock
 end sub
 
 </script>
