@@ -7,8 +7,13 @@ session("age") = 50
 session("favorite") = "Fishing"
 
 dim k
+response.write("-- session<br>")
 for each k in session.contents
 	response.write(k & "<br>")
+next
+response.write("<br>-- session value<br>")
+for each k in session.contents
+	response.write(k & " " & session.contents(k) & "<br>")
 next
 
 response.write("<br>")
