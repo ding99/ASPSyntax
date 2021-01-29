@@ -1,4 +1,4 @@
-<object runat="server" scope="session" id="MyAd" progid="MSWC.AdRotator">
+<object runat="server" scope="session" id="myAd" progid="ADODB.RecordSet">
 </object>
 
 <script language="vbscript" runat="server">
